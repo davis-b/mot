@@ -1,1 +1,3 @@
 _mot_ Message Oriented TCP
+
+Typically TCP streams data in such a way where there is no included end-point of a message. If multiple messages are sent in succession, a user must determine which message is which. This can be done by having fixed length messages, or including a header which contains the (variable) length of the message. _mot_ uses the latter method. By prepending a header to each message, we can delineate distinct messages from a stream of data.
