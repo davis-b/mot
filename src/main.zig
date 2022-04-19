@@ -308,7 +308,7 @@ test "send" {
     try testing.expectEqual(expected, result_header);
 }
 
-test "round trip; send and recieve" {
+test "round trip; send and receive" {
     const allocator = testing.allocator;
     var conn = try Mot(test_msg_len_t).init(allocator);
     defer conn.deinit();
